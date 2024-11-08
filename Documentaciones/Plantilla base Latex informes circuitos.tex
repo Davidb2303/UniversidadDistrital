@@ -1,0 +1,244 @@
+\documentclass[svgnames, aspectratio=169]{beamer}
+
+% Paquete para ajustar los márgenes
+\usepackage[left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+
+\usetheme{Madrid}
+
+% Título y autor
+\title{Explorando Circuitos Eléctricos: Ley de Kirchhoff y Regla de Cramer}
+\institute{Universidad Distrital Francisco José de Caldas\\ Ingeniería electrónica}
+\author{David Alejandro Ballesteros Padilla - 20232005090\\
+Nicolas Steven Beltrán Heredia - 20232005075\\
+Oscar Fabian Moreno Garzón - 20232005248,\\
+Julián Steban Monroy Sáchica - 20232005158}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Introducción}
+  En este laboratorio, Se explora los principios fundamentales de la ley de Kirchhoff y la regla de Cramer en el contexto de circuitos eléctricos. Mediante experimentos prácticos y cálculos teóricos, desarrollando una comprensión profunda de estos conceptos y su aplicación en la resolución de problemas eléctricos.
+\end{frame}
+
+\begin{frame}{Resultados esperados}
+  Para esta práctica, los resultados esperados serán que los valores de nuestras resistencias tengan un valor similar teniendo en cuenta su porcentaje de error. Además de esto, realizar 2 montajes en los que se calculan la corriente y los diferentes voltajes. 
+\end{frame}
+
+\begin{frame}{Metodología}
+\textbf{INSUMOS:}
+\begin{enumerate}
+    \item Resistencia de (100Ω) 
+    \item Resistencia de (50Ω) 
+    \item Resistencia de (40Ω) 
+    \item Resistencia de (20Ω) 
+    \item Batería de (20V) 
+    \item Cables conectores  
+\end{enumerate}
+
+\textbf{HERRAMIENTAS:}
+\begin{enumerate}
+    \item Multímetro 
+    \item Protoboard 
+\end{enumerate}
+
+\textbf{PROCEDIMIENTO (PASO A PASO):}
+\begin{itemize}
+      \item Paso 1: Para dar comienzo con esta práctica debemos conocer cómo se usa una protoboard y cómo ubicar de manera correcta nuestros elementos.
+\end{itemize}
+  
+\end{frame}
+
+\begin{frame}{Metodología}
+\begin{itemize}
+        \item Paso 2: Ubicamos nuestra batería proporcionando energía en el borde de la protoboard (positivo y negativo). 
+      \item Paso 3: Agregamos dos resistencias en serie de (100Ω) y de (50Ω). 
+    \item Paso 4: Tomamos datos y empezamos a construir el segundo ejercicio. 
+    \item Paso 5: Ahora colocamos en serie dos resistencias de (20Ω) y de (50Ω) y paralela a estas una resistencia de (40Ω). 
+    \item Paso 6: Comparamos datos y generamos unos resultados además de unas conclusiones con lo visto. 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Marco de referencia}
+\begin{itemize}
+    \item ¿Qué es la Ley de Corrientes de Kirchhoff y cuál es su importancia en el análisis de circuitos eléctricos?
+    La Ley de Corrientes de Kirchhoff establece que la suma algebraica de las corrientes que entran y salen de cualquier nodo en un circuito eléctrico es igual a cero. Es importante porque nos permite analizar cómo se distribuye la corriente en un circuito y determinar las corrientes desconocidas en diferentes partes del mismo.
+    \item ¿Cuál es la Ley de Voltajes de Kirchhoff y cómo se aplica en el análisis de circuitos eléctricos?
+    La Ley de Voltajes de Kirchhoff establece que la suma algebraica de los cambios de voltaje alrededor de cualquier lazo cerrado en un circuito es igual a cero. Se aplica formulando ecuaciones basadas en las caídas de voltaje y los voltajes suministrados por las fuentes de energía en los lazos cerrados del circuito, lo que nos permite determinar los voltajes desconocidos en diferentes partes del circuito.
+    
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Marco de referencia}
+\begin{itemize}
+    \item ¿Cuál es el propósito de la Regla de Cramer en el contexto de sistemas de ecuaciones lineales?
+
+La Regla de Cramer proporciona un método para resolver sistemas de ecuaciones lineales utilizando determinantes. Su propósito es encontrar una solución exacta para sistemas de ecuaciones lineales cuando se cumplen ciertas condiciones, como tener el mismo número de ecuaciones que de incógnitas y una matriz de coeficientes no singular.
+    La Ley de Corrientes de Kirchhoff establece que la suma algebraica de las corrientes que entran y salen de cualquier nodo en un circuito eléctrico es igual a cero. Es importante porque nos permite analizar cómo se distribuye la corriente en un circuito y determinar las corrientes desconocidas en diferentes partes del mismo.
+    
+\end{itemize}
+\end{frame}
+
+    \begin{frame}{Marco de referencia}
+\begin{itemize}
+        \item \begin{equation}
+    x = \frac{
+        \begin{vmatrix}
+            b_{1} & c_{1} & d_{1} \\
+            b_{2} & c_{2} & d_{2} \\
+            b_{3} & c_{3} & d_{3} \\
+        \end{vmatrix}
+    }{
+        \begin{vmatrix}
+            a_{1} & c_{1} & d_{1} \\
+            a_{2} & c_{2} & d_{2} \\
+            a_{3} & c_{3} & d_{3} \\
+        \end{vmatrix}
+    }
+\end{equation}
+
+\item   \begin{equation}
+    y = \frac{
+        \begin{vmatrix}
+            a_{1} & b_{1} & d_{1} \\
+            a_{2} & b_{2} & d_{2} \\
+            a_{3} & b_{3} & d_{3} \\
+        \end{vmatrix}
+    }{
+        \begin{vmatrix}
+            a_{1} & c_{1} & d_{1} \\
+            a_{2} & c_{2} & d_{2} \\
+            a_{3} & c_{3} & d_{3} \\
+        \end{vmatrix}
+    }
+\end{equation}
+   
+\end{itemize}
+\end{frame}
+
+    \begin{frame}{Marco de referencia}
+\begin{itemize}
+        \item ¿Cuál es la Ley de Voltajes de Kirchhoff y cómo se aplica en el análisis de circuitos eléctricos?
+    La Ley de Voltajes de Kirchhoff establece que la suma algebraica de los cambios de voltaje alrededor de cualquier lazo cerrado en un circuito es igual a cero. Se aplica formulando ecuaciones basadas en las caídas de voltaje y los voltajes suministrados por las fuentes de energía en los lazos cerrados del circuito, lo que nos permite determinar los voltajes desconocidos en diferentes partes del circuito.
+
+    \begin{equation}
+    \sum_{n=1}^{N} I_n = 0
+\end{equation}
+
+\begin{equation}
+    \sum_{m=1}^{M} V_m = 0
+\end{equation}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Diseño}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Diseño 1.jpeg}
+    \caption{En esta imagen está el modelado del diseño 1.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Diseño}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Tabla diseño 1.jpeg}
+    \caption{Esta tabla contiene los valores teóricos de las resistencias del diseño 1.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Diseño}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Diseño 2.jpeg}
+    \caption{En esta imagen está el modelado del diseño 2.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Diseño}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Tabla diseño 1.jpeg}
+    \caption{Esta tabla contiene los valores teóricos de las resistencias del diseño 1.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Diseño}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Diseño 2.jpeg}
+    \caption{En esta imagen está el modelado del diseño 2.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Diseño}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Tabla diseño 2.jpeg}
+    \caption{Esta tabla contiene los valores teóricos de las resistencias del diseño 2.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Conclusiones}
+\begin{itemize}
+    \item La ley de Kirchhoff es fundamental para el análisis de circuitos eléctricos porque nos permite comprender y calcular las corrientes y voltajes en diferentes partes del circuito.
+
+\item  Al aplicar la ley de corrientes de Kirchhoff y la ley de voltajes de Kirchhoff, podemos resolver circuitos complejos y determinar con precisión valores desconocidos.
+\item La regla de Cramer es una solución elegante para sistemas de ecuaciones lineales que se puede utilizar en el análisis de circuitos eléctricos.
+
+\item  Esto es útil para sistemas pequeños y bien definidos, permitiendo encontrar soluciones precisas en ciertos casos.
+\item Se ignora la existencia del error porcentual de las resistencias por lo que el valor experimental es muy probable que de diferente al valor teórico hallado en este pre informe.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Bibliografía}
+\begin{itemize}
+    \item 
+
+Para obtener más información sobre las leyes de voltajes y corrientes de Kirchhoff, consulta el siguiente enlace: \cite{Kirchhoff_Leyes}.
+
+\begin{thebibliography}{9}
+\bibitem{Kirchhoff_Leyes}
+Disponible en: \url{http://wwwprof.uniandes.edu.co/~ant-sala/cursos/FDC/Contenidos/02_Leyes_de_Voltajes_y_Corrientes_de_Kirchhoffs.pdf}, 02 de Marzo de 2024.
+\end{thebibliography}
+
+
+
+
+
+Para obtener más información sobre electrónica básica, consulta el siguiente libro: \cite{libro_electronica}.
+
+\begin{thebibliography}{9}
+\bibitem{libro_electronica}
+\textit{BasicElectronicsforScientistsandEngineers-2}, 2011. Disponible en: \url{https://cis.rmuti.ac.th/electricrail/wp-content/uploads/2020/08/BasicElectronicsforScientistsandEngineers-2.pdf}, 02 de Marzo de 2024.
+\end{thebibliography}
+
+
+\end{itemize}
+    
+
+
+
+
+    
+\end{frame}
+
+
+\end{document}
